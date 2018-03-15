@@ -2,8 +2,7 @@
 
 Apache Deep Learning 101
 
-[logo] cat.gif
-
+![Deep Learning Cat](cat.gif)
 
 ## Articles
 
