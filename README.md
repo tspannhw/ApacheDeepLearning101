@@ -28,6 +28,24 @@ Apache Deep Learning 101
 * https://github.com/tspannhw/nifi-smartplug
 * https://github.com/tspannhw/nvidiajetsontx1-mxnet
 
+## Installation
+
+* pip3 install --upgrade tensorflow
+* pip3 install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+* pip3 install -U nltk
+* wget https://github.com/bazelbuild/bazel/releases/download/0.11.1/bazel-0.11.1-installer-linux-x86_64.sh
+* ./bazel-0.11.1-installer-linux-x86_64.sh
+* pip3 install six numpy wheel
+* apt-get install libblas-dev liblapack-dev python-dev libatlas-base-dev gfortran python-setuptools python-h5py
+* git clone --recurse-submodules https://github.com/tensorflow/tensorflow
+* wget http://mirror.jax.hugeserver.com/apache/nifi/minifi/0.4.0/minifi-0.4.0-bin.zip
+
+
+## Hardware
+
+* Raspberry Pi 3 B with Movidius USB Neural Compute Stick with Sense-Hat and PS3 EYE USB Web Cam
+* Nvidia Jetson TX1 with logitech webcam
+
 
 More information coming soon.
 
