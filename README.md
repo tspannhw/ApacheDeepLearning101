@@ -1,3 +1,30 @@
+# IoT With Apache MXnet and Apache NiFi and MiniFi
+
+DWS 18 talk on using deep learning at the edge with Apache tools.
+
+* https://dataworkssummit.com/berlin-2018/session/iot-with-apache-mxnet-and-apache-nifi-and-minifi/
+
+## Articles
+
+* https://dzone.com/articles/enterprise-iiot-edge-processing
+* https://dzone.com/guides/iot-harnessing-device-data
+
+## Source Code
+
+* https://github.com/tspannhw/mxnet-for-iot
+
+## References
+
+* https://github.com/dmlc/mxnet-model-gallery 
+* http://mxnet.incubator.apache.org/model_zoo/index.html  
+* https://community.hortonworks.com/articles/146704/edge-analytics-with-nvidia-jetson-tx1-running-apac.html 
+* https://community.hortonworks.com/articles/83100/deep-learning-iot-workflows-with-raspberry-pi-mqtt.html 
+* https://community.hortonworks.com/articles/146704/edge-analytics-with-nvidia-jetson-tx1-running-apac.html 
+* https://community.hortonworks.com/articles/176932/apache-deep-learning-101-using-apache-mxnet-on-the.html 
+* https://community.hortonworks.com/articles/155435/using-the-new-mxnet-model-server.html 
+
+
+
 # Apache Deep Learning 101
 
 Apache Deep Learning 101
