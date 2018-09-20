@@ -41,6 +41,11 @@ Apache Deep Learning 101
 * https://community.hortonworks.com/articles/174399/apache-deep-learning-101-using-apache-mxnet-on-apa.html
 * https://community.hortonworks.com/articles/177370/extracting-html-from-pdf-excel-and-word-documents.html
 * https://community.hortonworks.com/articles/174538/apache-deep-learning-101-using-apache-mxnet-with-h.html
+* https://community.hortonworks.com/articles/202236/integrating-apache-mxnet-model-server-with-apache.html
+* https://community.hortonworks.com/articles/198939/using-apache-mxnet-gluoncv-with-apache-nifi-for-de.html
+* https://community.hortonworks.com/articles/182984/vision-thing-part-2-processing-capturing-and-displ.html
+* https://community.hortonworks.com/articles/183474/iot-using-minifi-java-agent-to-send-mqtt-messages.html
+
 
 
 ## Source Code
@@ -54,6 +59,17 @@ Apache Deep Learning 101
 * https://github.com/tspannhw/rpi-minifi-movidius-sensehat
 * https://github.com/tspannhw/nifi-smartplug
 * https://github.com/tspannhw/nvidiajetsontx1-mxnet
+* https://github.com/tspannhw/StrataNYC2018
+* https://github.com/tspannhw/OpenSourceComputerVision
+* https://github.com/tspannhw/DWS-DeepLearning-CrashCourse
+* https://github.com/tspannhw/yolo3-keras-tensorflow
+* https://github.com/tspannhw/nifi-nlp-processor
+* https://github.com/tspannhw/nifi-yolo3
+* https://github.com/tspannhw/mxnet-for-iot
+* https://github.com/tspannhw/IoTFusion2018Talk
+* https://github.com/tspannhw/GetWebCamera
+* https://github.com/tspannhw/nifi-tensorflow-processor
+* https://github.com/tspannhw/UsingGluonCV
 
 ## Installation
 
@@ -65,8 +81,9 @@ Apache Deep Learning 101
 * pip3 install six numpy wheel
 * apt-get install libblas-dev liblapack-dev python-dev libatlas-base-dev gfortran python-setuptools python-h5py
 * git clone --recurse-submodules https://github.com/tensorflow/tensorflow
-* wget http://mirror.jax.hugeserver.com/apache/nifi/minifi/0.4.0/minifi-0.4.0-bin.zip
-
+* wget http://mirror.jax.hugeserver.com/apache/nifi/minifi/0.5.0/minifi-0.5.0-bin.zip
+* pip3.6 install --pre mxnet 
+* pip3.6 install gluoncv
 
 ## Hardware
 
