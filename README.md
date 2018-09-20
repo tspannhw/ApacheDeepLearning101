@@ -88,11 +88,9 @@ Apache Deep Learning 101
 ## Hardware
 
 * Raspberry Pi 3 B with Movidius USB Neural Compute Stick with Sense-Hat and PS3 EYE USB Web Cam
+* Raspberry Pi 3 B with Rainbow Hat (Android Things), USB GPS and PS3 EYE USB Web Cam
 * Nvidia Jetson TX1 with logitech webcam
 
-
-More information coming soon.
-
-Just us at the meetup on Tuesday.
+Meetups in Princeton every few weeks:   http://www.meetup.com/futureofdata-princeton/
 
 @PaasDev
