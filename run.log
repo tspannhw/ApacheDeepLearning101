@@ -1,0 +1,70 @@
+
+Application
+Tools
+Configuration
+Local logs
+Server stacks
+Server metrics
+Log Type: launch_container.sh
+
+Log Upload Time: Fri Sep 21 15:31:34 +0000 2018
+
+Log Length: 4598
+
+#!/bin/bash
+
+set -o pipefail -e
+export PRELAUNCH_OUT="/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001/prelaunch.out"
+exec >"${PRELAUNCH_OUT}"
+export PRELAUNCH_ERR="/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001/prelaunch.err"
+exec 2>"${PRELAUNCH_ERR}"
+echo "Setting up env variables"
+export JAVA_HOME=${JAVA_HOME:-"/usr/jdk64/jdk1.8.0_112"}
+export HADOOP_CONF_DIR=${HADOOP_CONF_DIR:-"/usr/hdp/3.0.0.0-1634/hadoop/conf"}
+export HADOOP_YARN_HOME=${HADOOP_YARN_HOME:-"/usr/hdp/3.0.0.0-1634/hadoop-yarn"}
+export HADOOP_HOME=${HADOOP_HOME:-"/usr/hdp/3.0.0.0-1634/hadoop"}
+export PATH=${PATH:-"/usr/sbin:/sbin:/usr/lib/ambari-server/*:/usr/sbin:/sbin:/usr/lib/ambari-server/*:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/var/lib/ambari-agent:/var/lib/ambari-agent"}
+export LANG=${LANG:-"en_US.UTF-8"}
+export HADOOP_TOKEN_FILE_LOCATION="/hadoop/yarn/local/usercache/root/appcache/application_1536697796040_0022/container_1536697796040_0022_01_000001/container_tokens"
+export CONTAINER_ID="container_1536697796040_0022_01_000001"
+export NM_PORT="45454"
+export NM_HOST="princeton0.field.hortonworks.com"
+export NM_HTTP_PORT="8042"
+export LOCAL_DIRS="/hadoop/yarn/local/usercache/root/appcache/application_1536697796040_0022"
+export LOCAL_USER_DIRS="/hadoop/yarn/local/usercache/root/"
+export LOG_DIRS="/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001"
+export USER="root"
+export LOGNAME="root"
+export HOME="/home/"
+export PWD="/hadoop/yarn/local/usercache/root/appcache/application_1536697796040_0022/container_1536697796040_0022_01_000001"
+export JVM_PID="$$"
+export MALLOC_ARENA_MAX="4"
+export NM_AUX_SERVICE_timeline_collector=""
+export NM_AUX_SERVICE_mapreduce_shuffle="AAA0+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+export NM_AUX_SERVICE_spark2_shuffle=""
+export APP_SUBMIT_TIME_ENV="1537543884621"
+export TIMELINE_FLOW_NAME_TAG="DistributedShell"
+export DISTRIBUTEDSHELLSCRIPTLEN="0"
+export TIMELINE_FLOW_VERSION_TAG="1"
+export DISTRIBUTEDSHELLSCRIPTTIMESTAMP="0"
+export DISTRIBUTEDSHELLSCRIPTLOCATION=""
+export APPLICATION_WEB_PROXY_BASE="/proxy/application_1536697796040_0022"
+export CLASSPATH="$CLASSPATH:./*:$HADOOP_CONF_DIR:/usr/hdp/3.0.0.0-1634/hadoop/*:/usr/hdp/3.0.0.0-1634/hadoop/lib/*:/usr/hdp/current/hadoop-hdfs-client/*:/usr/hdp/current/hadoop-hdfs-client/lib/*:/usr/hdp/current/hadoop-yarn-client/*:/usr/hdp/current/hadoop-yarn-client/lib/*:./log4j.properties"
+export TIMELINE_FLOW_RUN_ID_TAG="1537543884622"
+echo "Setting up job resources"
+ln -sf "/hadoop/yarn/local/usercache/root/appcache/application_1536697796040_0022/filecache/10/AppMaster.jar" "AppMaster.jar"
+ln -sf "/hadoop/yarn/local/usercache/root/appcache/application_1536697796040_0022/filecache/11/shellCommands" "shellCommands"
+ln -sf "/hadoop/yarn/local/usercache/root/appcache/application_1536697796040_0022/filecache/12/shellArgs" "shellArgs"
+echo "Copying debugging information"
+# Creating copy of launch script
+cp "launch_container.sh" "/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001/launch_container.sh"
+chmod 640 "/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001/launch_container.sh"
+# Determining directory contents
+echo "ls -l:" 1>"/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001/directory.info"
+ls -l 1>>"/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001/directory.info"
+echo "find -L . -maxdepth 5 -ls:" 1>>"/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001/directory.info"
+find -L . -maxdepth 5 -ls 1>>"/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001/directory.info"
+echo "broken symlinks(find -L . -maxdepth 5 -type l -ls):" 1>>"/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001/directory.info"
+find -L . -maxdepth 5 -type l -ls 1>>"/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001/directory.info"
+echo "Launching container"
+exec /bin/bash -c "$JAVA_HOME/bin/java -Xmx100m org.apache.hadoop.yarn.applications.distributedshell.ApplicationMaster --container_type GUARANTEED --container_memory 512 --container_vcores 1 --num_containers 1 --priority 0 1>/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001/AppMaster.stdout 2>/hadoop/yarn/log/application_1536697796040_0022/container_1536697796040_0022_01_000001/AppMaster.stderr "
