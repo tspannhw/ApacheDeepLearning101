@@ -1,0 +1,1 @@
+yarn jar /usr/hdp/current/hadoop-yarn-client/hadoop-yarn-applications-distributedshell.jar -jar /usr/hdp/current/hadoop-yarn-client/hadoop-yarn-applications-distributedshell.jar -shell_command python3.6 -shell_args "/opt/demo/ApacheDeepLearning101/analyzex.py /opt/demo/images/201813161108103.jpg" -container_resources memory-mb=512,vcores=1
